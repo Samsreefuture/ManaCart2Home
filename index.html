@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Mana Cart2Home - Shop groceries, household essentials, stationery, fancy items and home & kitchen products. Order online and get free delivery.">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Mana Cart2Home | Shop Online & Get Free Delivery</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         TOP DELIVERY BAR
+    ====================================================== -->
+    <div class="top-bar">
+        🚚 <strong>FREE DELIVERY</strong>
+        <span> | </span>
+        Order Online — We Source & Deliver Your Products
+    </div>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+
+            <!-- LOGO -->
+            <a href="#home" class="logo" aria-label="ManaCart2Home Home">
+                <img src="./images/ManaCart2Home Logo.png" alt="ManaCart2Home Logo" class="site-logo">
+            </a>
+
+
+            <!-- DESKTOP SEARCH -->
+            <div class="search-box">
+                <input type="search" id="searchInput" placeholder="Search products..." autocomplete="off">
+
+                <button type="button" id="searchBtn" aria-label="Search">
+                    🔍
+                </button>
+            </div>
+
+
+            <!-- HEADER ACTIONS -->
+            <div class="header-actions">
+
+                <button class="header-action" type="button">
+                    👤
+                    <span>Account</span>
+                </button>
+
+                <button class="header-action cart-button" type="button" id="cartButton">
+                    🛒
+                    <span>Cart</span>
+                    <b id="cartCount">0</b>
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE MENU BUTTON -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">
+                ☰
+            </button>
+
+        </div>
+
+
+        <!-- MOBILE SEARCH -->
+        <div class="mobile-search container">
+
+            <div class="search-box">
+                <input type="search" id="mobileSearchInput" placeholder="Search products..." autocomplete="off">
+
+                <button type="button" id="mobileSearchBtn">
+                    🔍
+                </button>
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <nav class="main-nav" id="mainNav">
+
+            <div class="container nav-inner">
+
+                <a href="#home">Home</a>
+
+                <a href="#categories">Categories</a>
+
+                <a href="#popular">Popular</a>
+
+                <a href="#offers">Offers</a>
+
+                <a href="#how-it-works">How It Works</a>
+
+                <a href="#why-us">Why Us</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MANACART2HOME - 5 IMAGE BANNERS -->
+    <section class="mc-banner-slider" id="mcBannerSlider" aria-label="Shopping banners">
+
+        <div class="mc-banner-track">
+
+            <div class="mc-banner-slide">
+                <a href="#products" class="mc-banner-link" aria-label="Shop special offers">
+                    <img src="./images/5%20Banners/1jan25-crsl-dg-hyd.jpg" alt="Special shopping offers">
+                    <span class="mc-shop-now">SHOP NOW</span>
+                </a>
+            </div>
+
+            <div class="mc-banner-slide">
+                <a href="#products" class="mc-banner-link" aria-label="Shop housekeeping products">
+                    <img src="./images/5%20Banners/house%20keeping%20banner.jpg" alt="Housekeeping products">
+                    <span class="mc-shop-now">SHOP NOW</span>
+                </a>
+            </div>
+
+            <div class="mc-banner-slide">
+                <a href="#products" class="mc-banner-link" aria-label="Shop grocery products">
+                    <img src="./images/5%20Banners/groceries%20banner.jpg" alt="Grocery products">
+                    <span class="mc-shop-now">SHOP NOW</span>
+                </a>
+            </div>
+
+            <div class="mc-banner-slide">
+                <a href="#products" class="mc-banner-link" aria-label="Shop cooking items">
+                    <img src="./images/5%20Banners/cooking%20items%20banner.jpg" alt="Cooking items">
+                    <span class="mc-shop-now">SHOP NOW</span>
+                </a>
+            </div>
+
+            <div class="mc-banner-slide">
+                <a href="#products" class="mc-banner-link" aria-label="Shop available products">
+                    <img src="./images/5%20Banners/comming%20soon%20vegetables%20banner.jpg"
+                        alt="Vegetables coming soon">
+                    <span class="mc-shop-now">SHOP NOW</span>
+                </a>
+            </div>
+
+        </div>
+
+        <button class="mc-banner-arrow mc-banner-prev" type="button" aria-label="Previous banner">❮</button>
+
+        <button class="mc-banner-arrow mc-banner-next" type="button" aria-label="Next banner">❯</button>
+
+        <div class="mc-banner-dots">
+            <button type="button" aria-label="Banner 1"></button>
+            <button type="button" aria-label="Banner 2"></button>
+            <button type="button" aria-label="Banner 3"></button>
+            <button type="button" aria-label="Banner 4"></button>
+            <button type="button" aria-label="Banner 5"></button>
+        </div>
+    </section>
+
+
+    <!-- MOVING PRODUCT OFFERS BANNER -->
+    <section class="moving-offers" aria-label="Product offers">
+        <div class="offers-track">
+
+            <div class="offer-item">
+                🌾 <strong>RICE SPECIALS</strong>
+                <span> బియ్యం రకాలు : సోనా మసూరి బియ్యం (Sona Masoori), బాస్మతి బియ్యం (Basmati), హెచ్‌ఎంటి బియ్యం
+                    (HMT), బ్రౌన్ రైస్ బియ్యం (Brown Rice) — ఈ రోజు ధరలు చూడండి</span>
+            </div>
+
+            <div class="offer-item">
+                🛢️ <strong>OIL COLLECTION</strong>
+                <span> వంట నూనెల రకాలు : వేరుశనగ నూనె / కొబ్బరి నూనె / ఆలివ్ నూనె / పల్లీ నూనె / పొద్దుతిరుగుడు పువ్వు
+                    నూనె / నెయ్యి - Sunflower &
+                    Groundnut / Till / Coconut / Ghee / Olives
+                    Oils</span>
+            </div>
+
+            <div class="offer-item">
+                🌶️ <strong>SPICES & POWDERS</strong>
+                <span>మీ వంటింటికి అవసరమైన మసాలాలు : కారం / ధనియాల పొడి / పసుపు / యాలకులు (Cardamom) / లవంగాలు (Cloves)
+                    / జీలకర్ర (Cumin seeds) / బిర్యానీ ఆకు (Bay leaves) గరం మసాలలు </span>
+            </div>
+
+            <div class="offer-item">
+                🌾 <strong>FLOURS & MAIDA</strong>
+                <span>Atta, Besan, Maida & Corn Flour</span>
+            </div>
+
+            <div class="offer-item">
+                🥜 <strong>DRY FRUITS</strong>
+                <span>Badam, Cashew & Kiss Miss</span>
+            </div>
+
+            <div class="offer-item">
+                🚚 <strong>FREE HOME DELIVERY</strong>
+                <span> మీ ఆర్డర్‌ను ఇంటి వద్దకే అందిస్తాము</span>
+            </div>
+
+            <!-- Repeat for continuous movement -->
+            <div class="offer-item" aria-hidden="true">
+                🌾 <strong>RICE SPECIALS</strong>
+                <span> బియ్యం రకాలు : సోనా మసూరి బియ్యం (Sona Masoori), బాస్మతి బియ్యం (Basmati), హెచ్‌ఎంటి బియ్యం
+                    (HMT), బ్రౌన్ రైస్ బియ్యం (Brown Rice) — ఈ రోజు ధరలు చూడండి</span>
+            </div>
+
+            <div class="offer-item" aria-hidden="true">
+                🛢️ <strong>OIL COLLECTION</strong>
+                <span> వంట నూనెల రకాలు : వేరుశనగ నూనె / కొబ్బరి నూనె / ఆలివ్ నూనె / పల్లీ నూనె / పొద్దుతిరుగుడు పువ్వు
+                    నూనె / నెయ్యి - Sunflower &
+                    Groundnut / Till / Coconut / Ghee / Olives
+                    Oils</span>
+            </div>
+
+            <div class="offer-item" aria-hidden="true">
+                🌶️ <strong>SPICES & POWDERS</strong>
+                <span>మీ వంటింటికి అవసరమైన మసాలాలు : కారం / ధనియాల పొడి / పసుపు / యాలకులు (Cardamom) / లవంగాలు (Cloves)
+                    / జీలకర్ర (Cumin seeds) / బిర్యానీ ఆకు (Bay leaves) గరం మసాలలు </span>
+            </div>
+
+            <div class="offer-item" aria-hidden="true">
+                🌾 <strong>FLOURS & MAIDA</strong>
+                <span>Atta, Besan, Maida & Corn Flour</span>
+            </div>
+
+            <div class="offer-item" aria-hidden="true">
+                🥜 <strong>DRY FRUITS</strong>
+                <span>Badam, Cashew & Kiss Miss</span>
+            </div>
+
+            <div class="offer-item" aria-hidden="true">
+                🚚 <strong>FREE HOME DELIVERY</strong>
+                <span>మీ ఆర్డర్‌ను ఇంటి వద్దకే అందిస్తాము</span>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="hero-badge">
+                        🛍️ Your Everyday Shopping Partner
+                    </span>
+
+                    <h1>
+                        Everything You Need,
+                        <span>Delivered to Home.</span>
+                    </h1>
+
+                    <p>
+                        Shop groceries, household essentials,
+                        stationery, fancy items and home & kitchen
+                        products — all in one place.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#categories" class="btn btn-primary">
+                            Shop Now
+                        </a>
+
+                        <a href="#how-it-works" class="btn btn-secondary">
+                            How It Works
+                        </a>
+
+                    </div>
+
+                    <div class="hero-features">
+
+                        <div>
+                            <strong>🚚</strong>
+                            <span>Free Delivery</span>
+                        </div>
+
+                        <div>
+                            <strong>💳</strong>
+                            <span>Online Payment</span>
+                        </div>
+
+                        <div>
+                            <strong>📦</strong>
+                            <span>Order Based</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO SHOPPING VISUAL -->
+                <div class="hero-visual">
+
+                    <div class="hero-circle"></div>
+
+                    <div class="shopping-card card-one">
+                        🛒
+                    </div>
+
+                    <div class="shopping-card card-two">
+                        📦
+                    </div>
+
+                    <div class="shopping-card card-three">
+                        🏠
+                    </div>
+
+                    <div class="hero-cart">
+                        🛍️
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             QUICK BENEFITS
+        ================================================== -->
+        <section class="benefits">
+
+            <div class="container benefits-grid">
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">🚚</div>
+                    <div>
+                        <h3>Free Delivery</h3>
+                        <p>Convenient delivery to your doorstep</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">💳</div>
+                    <div>
+                        <h3>Secure Payment</h3>
+                        <p>Simple and secure online checkout</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">🛍️</div>
+                    <div>
+                        <h3>Easy Shopping</h3>
+                        <p>Choose products and place your order</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">📞</div>
+                    <div>
+                        <h3>Customer Support</h3>
+                        <p>We are here when you need us</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+                              DMART-INSPIRED CATEGORY SECTION
+                      ================================================== -->
+        <section class="section categories-section" id="categories">
+            <div class="container">
+
+                <div class="section-heading category-heading">
+                    <span>SHOP BY CATEGORY</span>
+                    <h2>What Would You Like Today?</h2>
+                    <p>Explore everyday essentials for your home and family.</p>
+                </div>
+
+                <div class="category-grid">
+
+                    <a href="#products" class="category-card" data-category="Grocery">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=500&q=80"
+                                alt="Fresh grocery essentials" loading="lazy">
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Grocery & Staples</h3>
+                            <p>Rice, dals, atta, oils and spices</p>
+                            <span>Explore Products →</span>
+                        </div>
+                    </a>
+
+                    <a href="#products" class="category-card" data-category="Grocery">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?auto=format&fit=crop&w=500&q=80"
+                                alt="Packaged food and daily groceries" loading="lazy">
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Food & Daily Needs</h3>
+                            <p>Everyday food and kitchen essentials</p>
+                            <span>Explore Products →</span>
+                        </div>
+                    </a>
+
+                    <a href="#products" class="category-card" data-category="House Keeping">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=500&q=80"
+                                alt="Home cleaning supplies" loading="lazy">
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Cleaning & Housekeeping</h3>
+                            <p>Cleaning products and home care</p>
+                            <span>Explore Products →</span>
+                        </div>
+                    </a>
+
+                    <a href="#products" class="category-card" data-category="Personal Care">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=500&q=80"
+                                alt="Personal care products" loading="lazy">
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Personal Care</h3>
+                            <p>Personal hygiene and everyday care</p>
+                            <span>Explore Products →</span>
+                        </div>
+                    </a>
+
+                    <a href="#products" class="category-card" data-category="Stationery">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=500&q=80"
+                                alt="Stationery and writing supplies" loading="lazy">
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Stationery</h3>
+                            <p>Notebooks, pens and school supplies</p>
+                            <span>Explore Products →</span>
+                        </div>
+                    </a>
+
+                    <a href="#products" class="category-card" data-category="Home & Kitchen">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=500&q=80"
+                                alt="Home and kitchen essentials" loading="lazy">
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Home & Kitchen</h3>
+                            <p>Useful products for every home</p>
+                            <span>Explore Products →</span>
+                        </div>
+                    </a>
+
+                    <a href="#products" class="category-card" data-category="Fancy Items">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=500&q=80"
+                                alt="Beauty and fancy accessories" loading="lazy">
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Beauty & Fancy Items</h3>
+                            <p>Accessories and everyday essentials</p>
+                            <span>Explore Products →</span>
+                        </div>
+                    </a>
+
+                    <a href="#products" class="category-card" data-category="All">
+                        <div class="category-image category-all-image">
+                            <span>🛒</span>
+                        </div>
+                        <div class="category-card-content">
+                            <h3>Explore All Products</h3>
+                            <p>Browse our complete product collection</p>
+                            <span>View All Products →</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =================================================
+     POPULAR PRODUCTS
+================================================== -->
+        <section class="section products-section" id="popular">
+
+            <div class="container">
+
+                <div class="section-heading section-heading-row">
+
+                    <div>
+                        <span>POPULAR PRODUCTS</span>
+                        <h2>Shop Everyday Essentials</h2>
+                        <p>Choose your products and add them to your cart.</p>
+                    </div>
+
+                    <a href="#products" class="view-all">
+                        View All →
+                    </a>
+
+                </div>
+
+                <!-- Products are created automatically by script.js -->
+                <div class="product-grid" id="products"></div>
+
+                <p class="availability-note">
+                    ✓ Available for Order &nbsp; • &nbsp;
+                    We source your selected products after order confirmation.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             SPECIAL OFFERS
+        ================================================== -->
+        <section class="offers-section" id="offers">
+
+            <div class="container">
+
+                <div class="offer-banner">
+
+                    <div class="offer-content">
+
+                        <span class="offer-label">
+                            SPECIAL OFFER
+                        </span>
+
+                        <h2>
+                            Shop More. Save More.
+                        </h2>
+
+                        <p>
+                            Watch this space for special offers,
+                            combo deals and seasonal products.
+                        </p>
+
+                        <a href="#products" class="btn btn-light">
+                            Explore Products
+                        </a>
+
+                    </div>
+
+                    <div class="offer-visual">
+                        🛍️
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             HOW IT WORKS
+        ================================================== -->
+        <section class="section how-section" id="how-it-works">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>HOW IT WORKS</span>
+
+                    <h2>Simple Online Shopping</h2>
+
+                    <p>
+                        Order what you need. We source it for you.
+                    </p>
+
+                </div>
+
+
+                <div class="steps-grid">
+
+                    <div class="step-card">
+
+                        <div class="step-number">01</div>
+
+                        <div class="step-icon">
+                            🛍️
+                        </div>
+
+                        <h3>Choose Products</h3>
+
+                        <p>
+                            Browse categories and select the products
+                            you want.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">02</div>
+
+                        <div class="step-icon">
+                            🛒
+                        </div>
+
+                        <h3>Place Order</h3>
+
+                        <p>
+                            Add your selected products to the cart
+                            and checkout.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">03</div>
+
+                        <div class="step-icon">
+                            💳
+                        </div>
+
+                        <h3>Pay Online</h3>
+
+                        <p>
+                            Complete your order using secure online
+                            payment.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">04</div>
+
+                        <div class="step-icon">
+                            🏪
+                        </div>
+
+                        <h3>We Source Your Items</h3>
+
+                        <p>
+                            We purchase the same selected items from
+                            our market or supplier.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">05</div>
+
+                        <div class="step-icon">
+                            📦
+                        </div>
+
+                        <h3>Pack & Deliver</h3>
+
+                        <p>
+                            Your order is packed and delivered to
+                            your doorstep.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             WHY US
+        ================================================== -->
+        <section class="section why-section" id="why-us">
+
+            <div class="container why-grid">
+
+                <div class="why-content">
+
+                    <span class="section-label">
+                        WHY MANA CART2HOME
+                    </span>
+
+                    <h2>
+                        Convenient Shopping,
+                        Without the Hassle.
+                    </h2>
+
+                    <p>
+                        Mana Cart2Home is designed to make everyday
+                        shopping simple. Choose what you need online
+                        and let us take care of sourcing and delivery.
+                    </p>
+
+
+                    <div class="why-list">
+
+                        <div class="why-item">
+                            <span>✓</span>
+                            <div>
+                                <h3>Wide Product Selection</h3>
+                                <p>
+                                    Everyday essentials across multiple
+                                    categories.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="why-item">
+                            <span>✓</span>
+                            <div>
+                                <h3>Order-Based Sourcing</h3>
+                                <p>
+                                    We source products after receiving
+                                    your order.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="why-item">
+                            <span>✓</span>
+                            <div>
+                                <h3>Free Delivery</h3>
+                                <p>
+                                    Convenient doorstep delivery with
+                                    no delivery charge for now.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="why-item">
+                            <span>✓</span>
+                            <div>
+                                <h3>Easy Online Ordering</h3>
+                                <p>
+                                    Select, pay and track your order
+                                    from one place.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="why-visual">
+
+                    <div class="why-main-card">
+
+                        <div class="why-big-icon">
+                            🏠
+                        </div>
+
+                        <h3>
+                            From Cart
+                            <br>
+                            <span>2 Home</span>
+                        </h3>
+
+                        <p>
+                            Your everyday shopping,
+                            made easier.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACT CTA
+        ================================================== -->
+        <section class="contact-cta" id="contact">
+
+            <div class="container contact-inner">
+
+                <div>
+
+                    <span>
+                        NEED HELP?
+                    </span>
+
+                    <h2>
+                        We're Here to Help You Shop.
+                    </h2>
+
+                    <p>
+                        Have a question about a product or your order?
+                        Get in touch with us.
+                    </p>
+
+                </div>
+
+                <div class="contact-buttons">
+
+                    <a href="tel:+918125024046" class="btn btn-light">
+                        📞 Call Us
+                    </a>
+
+                    <a href="https://wa.me/918125024046" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                        💬 WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo footer-logo">
+                    <span class="logo-mana">Mana</span>
+                    <span class="logo-cart">Cart</span>
+                    <span class="logo-two">2</span>
+                    <span class="logo-home">Home</span>
+                </a>
+
+                <p>
+                    Everyday products, simple online ordering
+                    and convenient doorstep delivery.
+                </p>
+
+                <div class="footer-delivery">
+                    🚚 FREE DELIVERY
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Shop</h3>
+
+                <a href="#categories">Categories</a>
+                <a href="#popular">Popular Products</a>
+                <a href="#offers">Special Offers</a>
+                <a href="#products">All Products</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Information</h3>
+
+                <a href="#how-it-works">How It Works</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Customer Support</h3>
+
+                <a href="#contact">Help & Support</a>
+                <a href="#contact">Order Assistance</a>
+                <a href="#contact">WhatsApp Support</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container footer-bottom-inner">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    Mana Cart2Home. All Rights Reserved.
+                </p>
+
+                <p>
+                    Shop Online • Pay Securely • Get Delivered
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         CART DRAWER
+    ====================================================== -->
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button type="button" id="closeCart" aria-label="Close cart">
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="cart-body" id="cartBody">
+
+            <div class="empty-cart">
+
+                <div class="empty-cart-icon">
+                    🛒
+                </div>
+
+                <h3>Your cart is empty</h3>
+
+                <p>
+                    Add products to your cart to continue.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+            <button type="button" class="btn btn-primary checkout-btn" id="checkoutBtn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- CART OVERLAY -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+
+    <!-- =====================================================
+         SEARCH MESSAGE
+    ====================================================== -->
+    <div class="search-message" id="searchMessage">
+        <span id="searchMessageText"></span>
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+    <script src="script.js"></script>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        async function testRazorpayPayment() {
+            try {
+                const response = await fetch("/api/create-test-order", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({})
+                });
+
+                const order = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(
+                        order.details ||
+                        order.error ||
+                        "Order creation failed"
+                    );
+                }
+
+                const options = {
+                    key: order.keyId,
+                    amount: order.amount,
+                    currency: order.currency,
+                    name: "ManaCart2Home",
+                    description: "₹1 Test Payment",
+                    order_id: order.orderId,
+
+                    handler: async function (payment) {
+                        const verifyResponse = await fetch(
+                            "/api/verify-test-payment",
+                            {
+                                method: "POST",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify(payment)
+                            }
+                        );
+
+                        const result = await verifyResponse.json();
+
+                        if (verifyResponse.ok && result.verified) {
+                            alert("Test payment signature verified successfully!");
+                        } else {
+                            alert("Payment verification failed. Please check the server.");
+                        }
+                    },
+
+                    theme: { color: "#15605a" },
+                    modal: {
+                        ondismiss: function () {
+                            console.log("Test payment window closed.");
+                        }
+                    }
+                };
+
+                const checkout = new Razorpay(options);
+
+                checkout.on("payment.failed", function (event) {
+                    alert("Test payment failed: " + event.error.description);
+                });
+
+                checkout.open();
+
+            } catch (error) {
+                console.error(error);
+                alert("Error: " + error.message);
+            }
+        }
+    </script>
+
+    <button type="button" onclick="testRazorpayPayment()"
+        style="position:fixed;bottom:15px;right:15px;z-index:99999;background:#15605a;color:white;padding:12px 18px;border:0;border-radius:8px;cursor:pointer;">
+        Test Razorpay ₹1
+    </button>
+
+</body>
